@@ -9,13 +9,6 @@ The work was conducted as part of the **Software Testing course** at the Univers
 
 ---
 
-## 👤 Author
-- **Student:** Lưu Ngọc Yến Như – 22115053122128  
-- **Instructor:** Nguyễn Thị Đức  
-- **Date:** April 2025  
-
----
-
 ## 🛠️ Requirements Tested
 
 ### 1. Passengers
