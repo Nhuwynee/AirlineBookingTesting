@@ -1,55 +1,93 @@
-# ✈️ Airline Booking Website Testing
+# ✈️ Airline Booking Website Testing – Passengers & Add-ons
 
 ## 📌 Project Overview
-This project focuses on **software testing** for an airline ticket booking system.  
-It was conducted as part of the **Software Testing course project** at the University of Danang – University of Technology and Education.
+This project documents the **manual testing** of an airline booking website (Scoot Airlines), focusing on two critical modules:
+1. **Passengers** – entering and validating traveler details.  
+2. **Add-ons** – selecting additional services (baggage, seats, meals, Wi-Fi, insurance, etc.).  
 
-The testing process covers the entire booking flow, including:
-1. **Passengers** – entering traveler details.  
-2. **Add-ons** – selecting extra services (baggage, seat selection, meals, insurance, etc.).  
-3. **Review** – verifying booking summary, prices, and services before payment.  
-4. **Payment** – validating multiple payment methods and input constraints.  
+The work was conducted as part of the **Software Testing course** at the University of Danang – University of Technology and Education.  
 
 ---
 
-## 🛠️ Requirements & Features Tested
-- Passenger details validation (name, date of birth, nationality, passport, KrisFlyer number, etc.).  
-- Add-ons testing: baggage, seat selection, meal selection, Wi-Fi, insurance, and more.  
-- Review functionality: ensuring correct calculation of fares, add-on services, promotions, and booking summary.  
-- Payment process: validating fields (credit card, PayPal, Google Pay, PayNow, etc.), vouchers, and session timeout handling.  
-- System constraints: data format validation, mandatory fields, duplicate prevention, session expiration after inactivity.  
+## 👤 Author
+- **Student:** Lưu Ngọc Yến Như – 22115053122128  
+- **Instructor:** Nguyễn Thị Đức  
+- **Date:** April 2025  
+
+---
+
+## 🛠️ Requirements Tested
+
+### 1. Passengers
+- Mandatory fields: Salutation, First Name, Last Name, Date of Birth, Nationality, Place of Residence.  
+- Validation rules:  
+  - No empty or duplicate passenger details.  
+  - No special characters in names, max length 32 chars.  
+  - Correct formats for **KrisFlyer Number** and **Passport Number**.  
+  - Age verification based on type:  
+    - Adult: 1926–2013  
+    - Child: 2013–2023  
+    - Infant: 2023–2025  
+- System features:  
+  - Auto-fill when logged in (Travelling Passenger).  
+  - Checkbox option for “no First Name”.  
+  - Prevent duplicate passengers.  
+  - Session timeout after 15 minutes of inactivity.  
+
+### 2. Add-ons
+Nine services tested:  
+- Baggage  
+- Seat Selection  
+- Meal Selection  
+- Snooze Kit  
+- Onboard Wi-Fi  
+- BoardMeFirst  
+- Change Your Flight  
+- Pokémon Merchandise  
+- Scootsurance  
+
+Requirements:  
+- Options and pricing vary by ticket type (ScootPlus vs Economy).  
+- Services must display clear details and costs.  
+- Each passenger can select services individually.  
+- Updates must be reflected in the booking summary.  
+- System prevents errors, invalid edits, and expired sessions.  
 
 ---
 
 ## ✅ Test Cases
-- Designed and executed test cases for each booking step.  
-- Covered both **positive and negative scenarios** (valid input, missing data, special characters, incorrect formats, expired session handling, etc.).  
-- Documented expected results and actual outcomes (Pass/Fail).  
+- Designed **positive & negative scenarios** for each requirement.  
+- Covered field validation, input constraints, duplicate handling, and session expiry.  
+- Each test case documented with:  
+  - Pre-conditions  
+  - Input data  
+  - Steps  
+  - Expected results  
+  - Actual results (Pass/Fail)  
 
 ---
 
-## 📂 Project Structure
-- `Passengers_AddOns/` → Test cases for passenger details & add-on services.  
-- `Review_Payment/` → Test cases for booking review & payment process.  
-- `Reports/` → Summary of test execution and results.  
+## 📂 Repository Contents
+- `Requirements/` – Detailed requirements for Passengers & Add-ons.  
+- `TestCases/` – Designed test cases in tabular format.  
+- `Reports/` – Execution results with Pass/Fail status.  
+
+---
+
+## 🚀 Tools & Techniques
+- **Testing type:** Manual (Black-box).  
+- **Techniques:** Equivalence Partitioning, Boundary Value Analysis.  
+- **Documentation:** Microsoft Word, Excel.  
 
 ---
 
 ## 📊 Deliverables
-- Detailed requirement analysis.  
-- Test case design with step-by-step execution.  
-- Test reports with Pass/Fail results and screenshots (if applicable).  
-
----
-
-## 🚀 Technologies & Tools
-- Manual testing techniques.  
-- Black-box testing.  
-- Equivalence partitioning & boundary value analysis.  
-- Microsoft Word / Excel for documentation.  
+- Requirement specifications.  
+- Test case design.  
+- Test execution reports.  
+- Final documentation.  
 
 ---
 
 ## 🎓 Academic Context
-This project was developed as part of the **Software Testing course** to practice requirement analysis, test case design, and execution on a real-world airline booking website.
-
+This work is part of the **Software Testing course project** to practice requirement analysis, test design, and execution on a real-world airline booking platform.
